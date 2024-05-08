@@ -64,9 +64,17 @@ nav ul li a:hover::after{
     width: 100%;
 }
 
+.fa-xmark {
+    display: none;
+}
+
+.fa-bars {
+    display: none;
+}
+
 .header-text{
     margin-top: 20%;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .header-text h1{
@@ -98,6 +106,7 @@ nav ul li a:hover::after{
 .about-col-1 img{
     width: 100%;
     border-radius: 15px;
+    display: none;
 }
 
 .about-col-2{
@@ -156,19 +165,19 @@ nav ul li a:hover::after{
     display: block;
 }
 
-/*---------services-------*/
-#services{
+/*---------achievements-------*/
+#achievements{
     padding: 30px 0;
 }
 
-.services-list{
+.achievements-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
 
-.services-list div{
+.achievements-list div{
     background:#262626;
     padding: 40px;
     font-size: 13px;
@@ -177,18 +186,18 @@ nav ul li a:hover::after{
     transition: background 0.5s, transform 0.5s;
 }
 
-.services-list div i{
+.achievements-list div i{
     font-size: 50px;
     margin-bottom: 30px;
 }
 
-.services-list div h2{
+.achievements-list div h2{
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
 }
 
-.services-list div a{
+.achievements-list div a{
     text-decoration: none;
     color: #fff;
     font-size: 12px;
@@ -196,7 +205,7 @@ nav ul li a:hover::after{
     display: inline-block;
 }
 
-.services-list div:hover{
+.achievements-list div:hover{
     background: #ff004f;
     transform: translateY(-10);
 }
@@ -356,6 +365,21 @@ form btn2{
     cursor: pointer;
 }
 
+.email-link {
+    color: inherit;
+    text-decoration: none; 
+    position: relative; 
+}
+
+.email-link:hover::after {
+    content: "";
+    position: absolute; 
+    left: 0; 
+    bottom: -6px;
+    width: 100%; 
+    border-bottom: 3px solid #ff004f; 
+}
+
 .copyright{
     width:100%;
     text-align: center;
@@ -373,14 +397,16 @@ nav .fas{
 
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(images/Portfolio\ portrait.jpg);
+        background-image: url(Images/Portfolio\ portrait\ new.png);
     }
     .header-text{
-        margin-top:100%;
-        font-size: 16px;
+        margin-top:45%;
+        font-size: 18px;
     }
     .header-text h1{
-        font-size: 30px;
+        margin-top:40%;
+        font-size: 33px;
+        
     }
     nav .fa-solid{
         display : block;
@@ -416,6 +442,11 @@ nav .fas{
     .about-col-1{
         margin-bottom: 30px;
     }
+
+    .about-col-1 .desktop-image {
+        display: block;
+    }
+
     .about-col-2{
         font-size: 14px;
     }
@@ -430,8 +461,19 @@ nav .fas{
         font-size:14px;
     }
 }
+
+@media only screen and (min-width: 601px) {
+    .about-col-1 .mobile-image {
+        display: block; 
+    }
+}
+
 #msg{
     color: #61b752;
     margin-top: -40px;
     display: block;
+}
+
+.work.hidden {
+    display: none;
 }
