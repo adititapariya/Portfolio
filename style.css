@@ -64,10 +64,9 @@ nav ul li a:hover::after{
     width: 100%;
 }
 
-.mobile-icon {
+.container .mobile-icon {
     display: none;
 }
-
 
 .header-text{
     margin-top: 20%;
@@ -296,6 +295,10 @@ nav ul li a:hover::after{
     background: #ff004f;
 }
 
+.hidden-projects {
+    display: none;
+}
+
 /*---------contact---------*/
 .contact-left{
     flex-basis: 35%;
@@ -470,7 +473,7 @@ nav .fas{
         width: 40px;
         height: 40px;
     }
-    .mobile-icon {
+    .container .mobile-icon {
         display: inline-block;
     }
 }
