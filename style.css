@@ -64,13 +64,10 @@ nav ul li a:hover::after{
     width: 100%;
 }
 
-.fa-xmark {
+.mobile-icon {
     display: none;
 }
 
-.fa-bars {
-    display: none;
-}
 
 .header-text{
     margin-top: 20%;
@@ -472,6 +469,9 @@ nav .fas{
         line-height: 40px;
         width: 40px;
         height: 40px;
+    }
+    .mobile-icon {
+        display: inline-block;
     }
 }
 
