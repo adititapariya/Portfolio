@@ -161,6 +161,9 @@ nav ul li a:hover::after{
     display: block;
 }
 
+.intern{
+    text-align: justify;
+}
 /*---------achievements-------*/
 #achievements{
     padding: 30px 0;
