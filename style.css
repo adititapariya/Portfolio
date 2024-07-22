@@ -163,6 +163,7 @@ nav ul li a:hover::after{
 
 .intern{
     text-align: justify;
+    font-size: 14px;
 }
 /*---------achievements-------*/
 #achievements{
