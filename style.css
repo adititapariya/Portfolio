@@ -232,12 +232,7 @@ nav ul li a:hover::after{
 }
 
 .certifications-list div li{
-    padding: 5px;
-}
-
-.certifications-list div li{
-    margin-top: 5px;
-    margin-left: 30px;
+    margin: 5px;
 }
 
 .certifications-list div:hover{
